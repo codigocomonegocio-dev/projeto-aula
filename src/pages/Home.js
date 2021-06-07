@@ -1,9 +1,8 @@
 import React from 'react'
-import Loader from 'components/Loader'
 
 const Home = () => (
   <>
-    <Loader></Loader>
+    <h1>OPA</h1>
   </>
 )
 export default Home
