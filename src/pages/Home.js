@@ -7,7 +7,7 @@ import Selectcard from 'components/Selectcard'
 const Home = () => (
   <>
     <Smile valor="Outro texto qualquer" cor="#333" />
-    <Selectcard/>
+    <Selectcard text='Comprar uma casa'/>
   </>
 )
 export default Home
