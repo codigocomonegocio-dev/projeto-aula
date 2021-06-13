@@ -5,7 +5,7 @@ import check from '../assets/check.png'
 
 
 
-const Selectcard = ({ text }) => {
+const SelectCard = ({ text }) => {
 
     const [image, setImage] = useState(casinha)
     
@@ -15,19 +15,12 @@ const Selectcard = ({ text }) => {
   
   return (
     <>
-     <style>
-     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-     </style>
-
-     <button className="selectcard" onClick={click}>
+     <button className="select-card" onClick={click}>
       <img className="casinha" src={image} alt="vetor"/>
       <h1>{text}</h1> 
-
      </button>
-    
-      
     </>
   )
 }
 
-export default Selectcard
+export default SelectCard
