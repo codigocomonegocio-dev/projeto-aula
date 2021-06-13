@@ -8,9 +8,16 @@ import check from '../assets/check.png'
 const SelectCard = ({ text }) => {
 
     const [image, setImage] = useState(casinha)
+
+    const [verified, setVerified] = useState(false)
     
     const click = () => {
-        setImage(check)
+       setVerified(!verified)
+        if (verified === true) {
+          setImage(check)
+        } else if (verified === false){
+          setImage(casinha)
+        }
     }
   
   return (
