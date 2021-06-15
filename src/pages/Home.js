@@ -6,11 +6,13 @@ import Link from 'components/Link'
 
 const Home = () => (
   <>
-    <Botao texto="Entre com Facebook" corFundo="#344F8A" />
-    <Botao texto="Entre com Google" corFundo="#E63D33" />
-    <Botao texto="Continuar" corFundo="#0FA8F0" />
-    <Botao texto="Entrar" corFundo="#1BA75A" />
+    <Botao texto="Entre com Facebook" classe="btnFacebook" />
+    <Botao texto="Entre com Google" classe="btnGoogle" />
+    <Botao texto="Continuar" classe="btnContinuar" />
+    <Botao texto="Entrar" classe="btnEntrar" />
     <Link texto="Ainda não possui conta?" />
+
+
   </>
 )
 export default Home

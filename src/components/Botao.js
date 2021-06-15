@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Botao = ({ texto, cor }) => {
+const Botao = ({ texto, classe }) => {
+
+
 
   return (
     <>
       <div className='botao'>
-        <button><span>{texto}</span></button>
+        <button className={classe}>
+          <span>{texto}</span>
+        </button>
       </div>
     </>
   )

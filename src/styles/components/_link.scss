@@ -12,5 +12,10 @@
     line-height: 20px;
     text-align: center;
     color: #5e6a6e;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 }

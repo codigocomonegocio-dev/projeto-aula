@@ -5,6 +5,35 @@
     border-radius: 40px;
     border: none;
     outline: none;
+    display: block;
+  }
+  .btnFacebook {
+    background-color: #344f8a;
+
+    &:hover {
+      background-color: #2a406e;
+    }
+  }
+  .btnGoogle {
+    background-color: #e63d33;
+
+    &:hover {
+      background-color: #db271e;
+    }
+  }
+  .btnContinuar {
+    background-color: #0fa8f0;
+
+    &:hover {
+      background-color: #0568ad;
+    }
+  }
+  .btnEntrar {
+    background-color: #1ba75a;
+
+    &:hover {
+      background-color: #084124;
+    }
   }
   span {
     width: 157px;

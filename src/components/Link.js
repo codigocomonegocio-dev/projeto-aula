@@ -5,7 +5,7 @@ const Link = ({ texto }) => {
   return (
     <>
       <div className='link'>
-        <a src='#'>{texto}</a>
+        <a href='/'>{texto}</a>
       </div>
     </>
   )
