@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import 'styles/index.scss'
 import Routes from './routes'
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Routes />
