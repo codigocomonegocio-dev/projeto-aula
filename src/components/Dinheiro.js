@@ -1,24 +1,36 @@
 import React, { useState } from 'react'
-import MaskedInput from 'react-text-mask'
 
 const Dinheiro = () => {
-  const mascaraReal = {
-    MOEDA_REAL: [/^R\$(\d{1,3}(\.\d{3})*|\d+)(\,\d{2})?$/],
+  const formatarMoeda = () => {
+    var elemento = document.getElementById('valor')
+    var valor = elemento.value
+
+    valor = valor + ''
+    valor = parseInt(valor.replace(/[\D]+/g, ''))
+    valor = valor + ''
+    valor = valor.replace(/([0-9]{2})$/g, ',$1')
+
+    if (valor.length > 6) {
+      valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, '.$1,$2')
+    }
+
+    elemento.value = valor
+    if (valor == 'NaN') elemento.value = ''
   }
 
   return (
     <>
-      <h1>Brenno</h1>
       <div className="dinheiro">
-        <MaskedInput
+        <label for="money">R$ </label>
+        <input
           type="text"
-          maxlength="9"
+          maxLength="10"
           id="valor"
-          mask={mascaraReal.MOEDA_REAL}
+          onKeyUp={formatarMoeda}
+          placeholder="0,00"
         />
       </div>
     </>
   )
 }
-
 export default Dinheiro
