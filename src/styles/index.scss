@@ -1,4 +1,17 @@
+$cor1: #000000;
+$cor2: #C4342D;
+
+$tamanho2: 16px;
+$tamanho3: 12px;
+
+@mixin texto($size, $color) {
+    font: $size 'Montserrat', sans-serif;
+    color: $color;
+}
+
+
 @import 'reset';
 
-// Components
-@import 'components/smile';
+@import 'components/login';
+
+@import 'components/n3';

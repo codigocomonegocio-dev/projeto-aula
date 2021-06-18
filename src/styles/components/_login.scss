@@ -1,0 +1,112 @@
+.login {
+
+    position: relative;
+    width: 585px;
+    height: 305px;
+    background: #FFFFFF;
+    border: 2px solid #F2537A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+
+h1 {
+    position: absolute;
+    width: 77px;
+    height: 17px;
+    left: 105px;
+    top: 65px;
+    right: 393px;
+
+    @include texto(14px, $cor1);
+
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.email {
+
+    position: absolute;
+    width: 356px;
+    height: 40px;
+    left: 115px;
+    top: 97px;
+    right: 114px;
+    bottom: 168px;
+    background: #F6F7F8;
+    border: 2px solid #C4342D;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    @include texto(16px, $cor1);
+
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+p {
+
+    position: absolute;
+    width: 142px;
+    height: 15px;
+    left: 105px;
+    top: 135px;
+
+    @include texto(12px, $cor2);
+
+    font-weight: 500;
+    line-height: 15px;
+
+}
+
+h2 {
+
+    position: absolute;
+    width: 75px;
+    height: 17px;
+    left: 105px;
+    top: 165px;
+
+    @include texto(14px, $cor1);
+
+    font-weight: 600;
+    line-height: 17px;
+
+}
+
+.senha {
+
+    position: absolute;
+    width: 356px;
+    height: 40px;
+    left: 115px;
+    top: 194px;
+    right: 114px;
+    bottom: 71px;
+    background: #F6F7F8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+
+
+    @include texto(16px, $cor1);
+
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+button {
+
+    position: absolute;
+    left: 115px;
+    top: 260px;
+    display: flex;
+    
+    }
+
+}

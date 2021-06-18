@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Smile from 'components/Smile'
+import Login from "components/Login"
 
 const Home = () => (
   <>
-    <Smile valor="Outro texto qualquer" cor="#333" />
+    <Login />
   </>
 )
 export default Home
