@@ -1,6 +1,5 @@
 import React from 'react'
-
-import Smile from 'components/Smile'
+import Dinheiro from 'components/Dinheiro'
 
 import SelectCard from 'components/SelectCard'
 
@@ -8,7 +7,7 @@ import N5 from 'components/N5'
 
 const Home = () => (
   <>
-    <Smile valor="Outro texto qualquer" cor="#333" />
+    <Dinheiro />
     <SelectCard text='Comprar uma casa'/>
     <N5/>
   </>
