@@ -4,6 +4,7 @@ import Botao from 'components/Botao'
 import Link from 'components/Link'
 import SelectCard from 'components/SelectCard'
 import N5 from 'components/N5'
+import Login from "components/Login"
 
 const Home = () => (
   <>
@@ -15,6 +16,7 @@ const Home = () => (
     <Dinheiro />
     <SelectCard text='Comprar uma casa'/>
     <N5/>
+    <Login />
   </>
 )
 export default Home
