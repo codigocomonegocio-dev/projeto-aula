@@ -1,0 +1,33 @@
+.tabela {
+  align-items: center;
+  &:hover {
+    input {
+      background-color: #f6f7f8;
+    }
+    svg {
+      path {
+        fill: red;
+      }
+    }
+  }
+
+  input {
+    &:focus {
+      border-color: #0a86d0;
+    }
+  }
+}
+
+.item,
+.valor {
+  font: 14px 'Montserrat', sans-serif;
+  color: #000;
+  font-weight: 500;
+  line-height: 17px;
+  border-style: none;
+}
+
+.x {
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0);
+}
