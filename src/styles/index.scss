@@ -1,6 +1,10 @@
-@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@import 'reset';
 
 // Components
-@import "components/smile";
+@import 'components/dinheiro';
+@import 'components/selectcard';
+@import 'components/n5';
 @import "components/botao";
 @import "components/link";
