@@ -1,22 +1,23 @@
 $cor1: #000000;
-$cor2: #C4342D;
+$cor2: #c4342d;
 
 $tamanho2: 16px;
 $tamanho3: 12px;
 
 @mixin texto($size, $color) {
-    font: $size 'Montserrat', sans-serif;
+    font: $size "Montserrat", sans-serif;
     color: $color;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
 
-@import 'reset';
+@import "reset";
 
 // Components
-@import 'components/dinheiro';
-@import 'components/selectcard';
-@import 'components/n5';
+@import "components/dinheiro";
+@import "components/selectcard";
+@import "components/n5";
 @import "components/botao";
 @import "components/link";
-@import 'components/login';
+@import "components/login";
