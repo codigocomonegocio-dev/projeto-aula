@@ -1,7 +1,31 @@
-  .style{
-    height: 20;      
-    border-radius: 20;
-    margin: 50;
+.N7 {
+  border-radius: 5rem;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  // Inicio das propriedades de animação
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    animation: N7-animacao 4s ease forwards; //infinite
+    background-color: #fff;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
   }
   
-  
+  // Animação
+  @keyframes N7-animacao {
+    to {
+      transform: translateX(101%);
+    }
+  }
+}

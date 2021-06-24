@@ -1,13 +1,41 @@
 import React from 'react'
 // Importando componente ProgressBar
-import N7 from 'components/N7'
+import BarraProgresso from 'components/N7'
 
 const Home = () => (
   <>
-      
-      <N7 totalCor={2} valor_A={50} cor_A="#0000FF" valor_B={50} cor_B="#FF0000"/>
-      <N7 totalCor={3} valor_A={50} cor_A="#0000FF" valor_B={25} cor_B="#008000" valor_C={25} cor_C="#993399"/>
-      
+    <BarraProgresso
+      total="1"
+      corFirst="#1968df"
+      tamanhoFrist={100}
+    ></BarraProgresso>
+    <BarraProgresso
+      total="2"
+      corFirst="#1968df"
+      tamanhoFrist={50}
+      corMonday="#17d28f"
+      tamanhoMonday={50}
+    ></BarraProgresso>
+    <BarraProgresso
+      total="3"
+      corFirst="#1968df"
+      tamanhoFrist={50}
+      corMonday="#17d28f"
+      tamanhoMonday={25}
+      corThird="#fc3467"
+      tamanhoThird={25}
+    ></BarraProgresso>
+    <BarraProgresso
+      total="4"
+      corFirst="#1968df"
+      tamanhoFrist={50}
+      corMonday="#17d28f"
+      tamanhoMonday={25}
+      corThird="#fc3467"
+      tamanhoThird={25}
+      corFourth="#e9eff2"
+      tamanhoFourth={25}
+    ></BarraProgresso>
   </>
 )
 export default Home
