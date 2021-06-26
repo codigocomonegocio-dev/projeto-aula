@@ -2,7 +2,7 @@ import React from 'react'
 import Dinheiro from 'components/Dinheiro'
 import Botao from 'components/Botao'
 import Link from 'components/Link'
-import SelectCard from 'components/SelectCard'
+import CardSeletor from 'components/CardSeletor'
 import N5 from 'components/N5'
 import Login from 'components/Login'
 import Titulo from 'components/Titulo'
@@ -22,7 +22,7 @@ const Home = () => (
     <Botao texto="Entrar" classe="btnEntrar" />
     <Link texto="Ainda não possui conta?" />
     <Dinheiro />
-    <SelectCard text="Comprar uma casa" />
+    <CardSeletor text="Comprar uma casa" />
     <N5 />
     <Login />
   </>

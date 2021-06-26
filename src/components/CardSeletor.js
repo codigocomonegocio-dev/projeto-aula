@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import casinha from '../assets/casinha.png'
 import check from '../assets/check.png'
 
-const SelectCard = ({ text }) => {
+const CardSeletor = ({ text }) => {
   const [image, setImage] = useState(casinha)
 
   const [verified, setVerified] = useState(false)
@@ -19,7 +19,7 @@ const SelectCard = ({ text }) => {
 
   return (
     <>
-      <button className="select-card" onClick={click}>
+      <button className="card-seletor" onClick={click}>
         <img className="casinha" src={image} alt="vetor" />
         <h1>{text}</h1>
       </button>
@@ -27,4 +27,4 @@ const SelectCard = ({ text }) => {
   )
 }
 
-export default SelectCard
+export default CardSeletor
