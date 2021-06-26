@@ -1,106 +1,81 @@
 // Importação da Biblioteca padrão REACT
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react'
 
 // Criação do componente ProgressBar
 const N7 = (props) => {
-  const ProgressN7 = styled.div`
-      border-radius: 5rem;
-      width: 500px;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      overflow: hidden;
-      position: relative;
+  const [corA, setCorA] = useState(props.corA)
 
-      &::after {
-        animation: N7-animacao 4s ease forwards infinite;
-        background-color: #fff;
-        content: '';
-        display: block;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
+  const montar = () => {
+    const divA = document.getElementById('primeira')
+    const divB = document.getElementById('segunda')
+    const divC = document.getElementById('terceira')
+    const divD = document.getElementById('quarta')
 
-      @keyframes N7-animacao {
-        to {
-          transform: translateX(101%);
-        }
-      }
-    `
-  const ProgressN7First = styled.div`
-    background-color: ${props.corFirst};
-    width: ${props.tamanhoFrist}%;
-    border-radius: 10px 0 0 10px;
-    height: 100%;
-  `
-  const ProgressN7Monday = styled.div`
-    background-color: ${props.corMonday};
-    width: ${props.tamanhoMonday}%;
-    height: 100%;
-  `
-  const ProgressN7Third = styled.div`
-    background-color: ${props.corThird};
-    width: ${props.tamanhoThird}%;
-    height: 100%;
-  `
-  const ProgressN7Fourth = styled.div`
-    background-color: ${props.corFourth};
-    border-radius: 0 10px 10px 0;
-    width: ${props.tamanhoFourth}%;
-    height: 100%;
-  `
+    if (props.total === '1') {
+      divA.style.backgroundColor = props.corA //'#1968df'
+      divA.style.width = props.tamanhoA + '%'
+      divA.style.borderRadius = '10px'
+    }
+    if (props.total === '2') {
+      divA.style.backgroundColor = props.corA
+      divA.style.width = props.tamanhoA + '%'
+      divA.style.borderRadius = '10px 0 0 10px'
 
-  function ProgressN7Const(param) {
-    if (param.retorno === '1') {
-      return (
-        <ProgressN7>
-          <ProgressN7First style={{ borderRadius: '10px' }}></ProgressN7First>
-        </ProgressN7>
-      )
-    } else if (param.retorno === '2') {
-      return (
-        <ProgressN7>
-          <ProgressN7First></ProgressN7First>
-          <ProgressN7Monday
-            style={{ borderRadius: '0 10px 10px 0' }}
-          ></ProgressN7Monday>
-        </ProgressN7>
-      )
-    } else if (param.retorno === '3') {
-      return (
-        <ProgressN7>
-          <ProgressN7First></ProgressN7First>
-          <ProgressN7Monday></ProgressN7Monday>
-          <ProgressN7Third
-            style={{ borderRadius: '0 10px 10px 0' }}
-          ></ProgressN7Third>
-        </ProgressN7>
-      )
-    } else if (param.retorno === '4') {
-      return (
-        <ProgressN7>
-          <ProgressN7First></ProgressN7First>
-          <ProgressN7Monday></ProgressN7Monday>
-          <ProgressN7Third></ProgressN7Third>
-          <ProgressN7Fourth></ProgressN7Fourth>
-        </ProgressN7>
-      )
-    } else {
-      return (
-        <ProgressN7>
-          <ProgressN7First></ProgressN7First>
-        </ProgressN7>
-      )
+      divB.style.display = 'block'
+      divB.style.backgroundColor = props.corB
+      divB.style.width = props.tamanhoB + '%'
+      divB.style.borderRadius = '0 10px 10px 0'
+    }
+
+    if (props.total === '3') {
+      divA.style.backgroundColor = props.corA
+      divA.style.width = props.tamanhoA + '%'
+      divA.style.borderRadius = '10px 0 0 10px'
+
+      divB.style.display = 'block'
+      divB.style.backgroundColor = props.corB
+      divB.style.width = props.tamanhoB + '%'
+
+      divC.style.display = 'block'
+      divC.style.backgroundColor = props.corC
+      divC.style.width = props.tamanhoC + '%'
+      divC.style.borderRadius = '0 10px 10px 0'
+    }
+
+    if (props.total === '4') {
+      divA.style.backgroundColor = props.corA
+      divA.style.width = props.tamanhoA + '%'
+      divA.style.borderRadius = '10px 0 0 10px'
+
+      divB.style.display = 'block'
+      divB.style.backgroundColor = props.corB
+      divB.style.width = props.tamanhoB + '%'
+
+      divC.style.display = 'block'
+      divC.style.backgroundColor = props.corC
+      divC.style.width = props.tamanhoC + '%'
+
+      divD.style.display = 'block'
+      divD.style.backgroundColor = props.corD
+      divD.style.width = props.tamanhoD + '%'
+      divD.style.borderRadius = '0 10px 10px 0'
     }
   }
+
   return (
     <>
-      <ProgressN7Const retorno={props.total}></ProgressN7Const>
+      {
+        (window.onload = function () {
+          montar()
+        })
+      }
+
+      <div className="N7">
+        <div id="primeira" className="primeira"></div>
+        <div id="segunda" className="segunda"></div>
+        <div id="terceira" className="terceira"></div>
+        <div id="quarta" className="quarta"></div>
+      </div>
     </>
   )
 }

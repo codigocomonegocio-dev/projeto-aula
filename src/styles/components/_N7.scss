@@ -21,11 +21,30 @@
     bottom: 0;
     left: 0;
   }
-  
+
   // Animação
   @keyframes N7-animacao {
     to {
       transform: translateX(101%);
     }
+  }
+
+  .primeira {
+    height: 100%;
+  }
+
+  .segunda {
+    height: 100%;
+    display: none;
+  }
+
+  .terceira {
+    height: 100%;
+    display: none;
+  }
+
+  .quarta {
+    height: 100%;
+    display: none;
   }
 }
