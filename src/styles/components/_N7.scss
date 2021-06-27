@@ -1,4 +1,4 @@
-.N7 {
+.N7-progress {
   border-radius: 5rem;
   width: 500px;
   text-align: center;
@@ -22,7 +22,6 @@
     left: 0;
   }
 
-  // Animação
   @keyframes N7-animacao {
     to {
       transform: translateX(101%);
@@ -30,21 +29,22 @@
   }
 
   .primeira {
+    @include configProgressN7(#1968df, 100%, block);
     height: 100%;
   }
 
   .segunda {
+    @include configProgressN7(#17d28f, 50%);
     height: 100%;
-    display: none;
   }
 
   .terceira {
+    @include configProgressN7(#fc3467, 25%);
     height: 100%;
-    display: none;
   }
 
   .quarta {
+    @include configProgressN7(#e9eff2, 25%);
     height: 100%;
-    display: none;
   }
 }
