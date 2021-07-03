@@ -1,17 +1,16 @@
-import React, { useState } from 'react'
-import Excluir from "../assets/Icons/Excluir"
+import React from 'react'
+import Excluir from '../assets/Icons/Excluir'
+import Dinheiro from './Dinheiro'
 
 const N5 = () => {
-
-  
   return (
     <>
-     <div className="tabela">
-      <Excluir/>
-      <input className="item" type="text" placeholder="Item"></input>
-      <input className="valor" type="value" placeholder="R$ 0,00"></input>
-     </div>
-     <hr/>
+      <div className="tabela">
+        <Excluir />
+        <input className="item" type="text" placeholder="Item"></input>
+        <Dinheiro />
+      </div>
+      <hr />
     </>
   )
 }
