@@ -9,6 +9,16 @@ $tamanho3: 12px;
   color: $color;
 }
 
+@mixin configProgressN7(
+  $N7-progress-cor: #1968df,
+  $N7-progress-comp: '25%',
+  $N7-progress-fant: none
+) {
+  background-color: $N7-progress-cor;
+  width: $N7-progress-comp;
+  display: $N7-progress-fant;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
@@ -22,3 +32,4 @@ $tamanho3: 12px;
 @import 'components/botao';
 @import 'components/link';
 @import 'components/login';
+@import 'components/N7';
