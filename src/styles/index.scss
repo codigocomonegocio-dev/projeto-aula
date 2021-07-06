@@ -19,6 +19,7 @@ $tamanho3: 12px;
   display: $N7-progress-fant;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
@@ -27,7 +28,7 @@ $tamanho3: 12px;
 
 // Components
 @import 'components/dinheiro';
-@import 'components/selectcard';
+@import 'components/cardseletor';
 @import 'components/n5';
 @import 'components/botao';
 @import 'components/link';
