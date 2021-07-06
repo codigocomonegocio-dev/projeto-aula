@@ -1,0 +1,10 @@
+.dinheiro {
+  font: 500 16px 'Montserrat', sans-serif;
+  line-height: 20px;
+  border-style: none;
+  outline: 0;
+
+  &::placeholder {
+    color: #000;
+  }
+}
