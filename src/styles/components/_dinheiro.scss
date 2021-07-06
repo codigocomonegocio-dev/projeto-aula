@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 .dinheiro {
-  font: 500 16px 'Montserrat', sans-serif;
-  line-height: 20px;
-}
-
-.dinheiro input {
   font: 500 16px 'Montserrat', sans-serif;
   line-height: 20px;
   border-style: none;
   outline: 0;
-}
 
-.dinheiro input::placeholder {
-  color: #000;
+  &::placeholder {
+    color: #000;
+  }
 }

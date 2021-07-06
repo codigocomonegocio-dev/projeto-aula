@@ -1,36 +1,44 @@
 import React, { useState } from 'react'
 
 const Dinheiro = () => {
-  const formatarMoeda = () => {
-    var elemento = document.getElementById('valor')
-    var valor = elemento.value
+  const [valor, setValor] = useState('')
 
-    valor = valor + ''
-    valor = parseInt(valor.replace(/[\D]+/g, ''))
-    valor = valor + ''
-    valor = valor.replace(/([0-9]{2})$/g, ',$1')
+  const formatarMoeda = (evento) => {
+    let valorCampo = evento.target.value
 
-    if (valor.length > 6) {
-      valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, '.$1,$2')
+    let novoValor = valorCampo.replace('R$ ', '')
+    novoValor = parseInt(novoValor.replace(/[\D]+/g, ''))
+    novoValor = novoValor + ''
+    novoValor = novoValor.replace(/([0-9]{2})$/g, ',$1')
+
+    if (novoValor.length > 6) {
+      novoValor = novoValor.replace(/([0-9]{3}),([0-9]{2}$)/g, '.$1,$2')
     }
 
-    elemento.value = valor
-    if (valor == 'NaN') elemento.value = ''
+    if (novoValor.length === 1) {
+      novoValor = '0,0' + novoValor
+    }
+
+    if (novoValor.length === 3) {
+      novoValor = '0' + novoValor
+    }
+
+    if (novoValor === 'NaN') {
+      novoValor = '0,00'
+    }
+
+    setValor('R$ ' + novoValor)
   }
 
   return (
-    <>
-      <div className="dinheiro">
-        <label for="money">R$ </label>
-        <input
-          type="text"
-          maxLength="10"
-          id="valor"
-          onKeyUp={formatarMoeda}
-          placeholder="0,00"
-        />
-      </div>
-    </>
+    <input
+      type="text"
+      maxLength="13"
+      className="dinheiro"
+      value={valor}
+      onChange={formatarMoeda}
+      placeholder="R$ 0,00"
+    />
   )
 }
 export default Dinheiro

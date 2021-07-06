@@ -1,4 +1,5 @@
 import React from 'react'
+import N7 from 'components/N7'
 import Dinheiro from 'components/Dinheiro'
 import Botao from 'components/Botao'
 import Link from 'components/Link'
@@ -25,6 +26,28 @@ const Home = () => (
     <CardSeletor text="Comprar uma casa" />
     <N5 />
     <Login />
+  
+    <N7
+      CorA={'red'}
+      CompA={'50%'}
+      CorB={'blue'}
+      CompB={'50%'}
+      FanB={'block'}
+    ></N7>
+    <N7
+      CorA={'#1968df'}
+      CompA={'25%'}
+      CorB={'#17d28f'}
+      CompB={'25%'}
+      FanB={'block'}
+      CorC={'#fc3467'}
+      CompC={'25%'}
+      FanC={'block'}
+      CorD={'#e9eff2'}
+      CompD={'25%'}
+      FanD={'block'}
+    ></N7>
+    <N7></N7>
   </>
 )
 export default Home
