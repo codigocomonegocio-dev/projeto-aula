@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const N3 = (props) => {
+const EmailSenha = (props) => {
 
     const [email, setEmail] = useState ()
 
@@ -26,15 +26,16 @@ const N3 = (props) => {
 
         return (
         <>
-        <div className="n3">
-    <h1>Seu e-mail</h1>
-    <input type="text" placeholder="e-mail" value={props.email} onChange={e => setEmail(e.target.value)}></input>
-    <h2>Sua Senha</h2>
-    <input type="password" placeholder="senha"></input>
-    <button onClick={Clicou}>Enviar</button>
-    </div>
+          <div className="emailSenha">
+            <h1>Seu e-mail</h1>
+            <input type="text" placeholder="e-mail" value={props.email} onChange={e => setEmail(e.target.value)}></input>
+            <h2>Sua senha</h2>
+            <input type="password" placeholder="senha"></input>
+            <button onClick={Clicou}>Enviar</button>
+          </div>
+          
         </>
         )
 }
   
-export default N3
+export default EmailSenha

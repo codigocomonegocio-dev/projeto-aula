@@ -7,6 +7,7 @@ import CardSeletor from 'components/CardSeletor'
 import N5 from 'components/N5'
 import Login from 'components/Login'
 import Titulo from 'components/Titulo'
+import EmailSenha from 'components/EmailSenha'
 
 const Home = () => (
   <>
@@ -48,6 +49,7 @@ const Home = () => (
       FanD={'block'}
     ></N7>
     <N7></N7>
+    <EmailSenha/>
   </>
 )
 export default Home
