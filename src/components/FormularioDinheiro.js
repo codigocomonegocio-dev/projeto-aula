@@ -2,7 +2,7 @@ import React from 'react'
 import Excluir from '../assets/Icons/Excluir'
 import Dinheiro from './Dinheiro'
 
-const N5 = () => {
+const FormularioDinheiro = () => {
   return (
     <>
       <div className="tabela">
@@ -15,4 +15,4 @@ const N5 = () => {
   )
 }
 
-export default N5
+export default FormularioDinheiro

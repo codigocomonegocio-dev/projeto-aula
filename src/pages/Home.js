@@ -4,7 +4,7 @@ import Dinheiro from 'components/Dinheiro'
 import Botao from 'components/Botao'
 import Link from 'components/Link'
 import CardSeletor from 'components/CardSeletor'
-import N5 from 'components/N5'
+import FormularioDinheiro from 'components/FormularioDinheiro'
 import Login from 'components/Login'
 import Titulo from 'components/Titulo'
 import EmailSenha from 'components/EmailSenha'
@@ -25,9 +25,9 @@ const Home = () => (
     <Link texto="Ainda não possui conta?" />
     <Dinheiro />
     <CardSeletor text="Comprar uma casa" />
-    <N5 />
+    <FormularioDinheiro />
     <Login />
-  
+
     <N7
       CorA={'red'}
       CompA={'50%'}
@@ -49,7 +49,7 @@ const Home = () => (
       FanD={'block'}
     ></N7>
     <N7></N7>
-    <EmailSenha/>
+    <EmailSenha />
   </>
 )
 export default Home
