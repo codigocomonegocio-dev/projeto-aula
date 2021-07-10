@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Excluir from "../assets/Icons/Excluir"
+import Excluir from "./Excluir"
 
 const N5 = () => {
 
