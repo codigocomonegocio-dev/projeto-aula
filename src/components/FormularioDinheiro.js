@@ -1,16 +1,19 @@
-import React from 'react'
-import Excluir from '../assets/Icons/Excluir'
+import React, { useState } from 'react'
 import Dinheiro from './Dinheiro'
+import Excluir from './Excluir'
 
 const FormularioDinheiro = () => {
   return (
     <>
-      <div className="tabela">
-        <Excluir />
-        <input className="item" type="text" placeholder="Item"></input>
-        <Dinheiro />
+      <div className="linha">
+        <div className="coluna">
+          <Excluir />
+          <input className="item" type="text" placeholder="Item"></input>
+        </div>
+        <div className="coluna">
+          <Dinheiro />
+        </div>
       </div>
-      <hr />
     </>
   )
 }
