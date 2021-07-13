@@ -1,5 +1,6 @@
 .tabela {
   align-items: center;
+
   &:hover {
     .input {
       &:focus {
@@ -32,7 +33,9 @@
 }
 
 .x {
-  cursor: pointer;
+ 
   border-style: none;
   background-color: rgba(255, 255, 255, 0);
 }
+
+.valor{}
