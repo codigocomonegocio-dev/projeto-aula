@@ -17,6 +17,7 @@ $tamanho3: 12px;
   background-color: $N7-progress-cor;
   width: $N7-progress-comp;
   display: $N7-progress-fant;
+  border-radius: 10px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
@@ -34,3 +35,4 @@ $tamanho3: 12px;
 @import 'components/login';
 @import 'components/N7';
 @import 'components/emailSenha';
+@import 'components/resumoFinanceiro';
