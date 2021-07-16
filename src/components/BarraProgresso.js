@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Criação do componente ProgressBar
-const N7 = (props) => {
+const BarraProgresso = (props) => {
   return (
     <>
       <div className="N7-progress">
@@ -42,4 +42,4 @@ const N7 = (props) => {
   )
 }
 // Exportando para renderização na Home
-export default N7
+export default BarraProgresso
