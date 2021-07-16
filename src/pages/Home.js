@@ -8,6 +8,7 @@ import FormularioDinheiro from 'components/FormularioDinheiro'
 import Login from 'components/Login'
 import Titulo from 'components/Titulo'
 import EmailSenha from 'components/EmailSenha'
+import TituloComIcone from 'components/TituloComIcone'
 import ResumoFinanceiro from 'components/ResumoFinanceiro'
 
 const Home = () => (
@@ -51,6 +52,7 @@ const Home = () => (
     ></BarraProgresso>
     <BarraProgresso></BarraProgresso>
     <EmailSenha />
+    <TituloComIcone/>
     <ResumoFinanceiro
       rendaTotal={3000}
       dividas={600}
