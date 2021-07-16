@@ -8,6 +8,7 @@ import FormularioDinheiro from 'components/FormularioDinheiro'
 import Login from 'components/Login'
 import Titulo from 'components/Titulo'
 import EmailSenha from 'components/EmailSenha'
+import TituloComIcone from 'components/TituloComIcone'
 
 const Home = () => (
   <>
@@ -50,6 +51,7 @@ const Home = () => (
     ></N7>
     <N7></N7>
     <EmailSenha />
+    <TituloComIcone/>
   </>
 )
 export default Home
