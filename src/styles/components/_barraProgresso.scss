@@ -1,0 +1,10 @@
+.barra-progresso {
+  position: relative;
+  height: 14px;
+
+  .bloco {
+    position: absolute;
+    height: 14px;
+    border-radius: 14px;
+  }
+}
