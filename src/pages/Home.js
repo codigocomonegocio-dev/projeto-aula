@@ -12,7 +12,30 @@ import TituloComIcone from 'components/TituloComIcone'
 import ResumoFinanceiro from 'components/ResumoFinanceiro'
 
 const Home = () => (
-  <>
+  <section className="home">
+    <h1>BarraProgresso</h1>
+    <BarraProgresso
+      valores={[
+        {
+          cor: '#000000',
+          porcentagem: 100,
+        },
+        {
+          cor: '#17D28F',
+          porcentagem: 70,
+        },
+        {
+          cor: '#1968DF',
+          porcentagem: 40,
+        },
+        {
+          cor: '#FC3467',
+          porcentagem: 20,
+        },
+      ]}
+    />
+
+    <h1>Titulo</h1>
     <Titulo
       texto1="Preencha seus"
       destaque="gastos fixos"
@@ -20,39 +43,35 @@ const Home = () => (
       subtitulo="Não se preocupe, você poderá fazer isso depois"
       corDestaque="#FF0000"
     />
+
+    <h1>Botões</h1>
     <Botao texto="Entre com Facebook" classe="btnFacebook" />
     <Botao texto="Entre com Google" classe="btnGoogle" />
     <Botao texto="Continuar" classe="btnContinuar" />
     <Botao texto="Entrar" classe="btnEntrar" />
+
+    <h1>Link</h1>
     <Link texto="Ainda não possui conta?" />
+
+    <h1>Dinheiro</h1>
     <Dinheiro />
+
+    <h1>CardSeletor</h1>
     <CardSeletor text="Comprar uma casa" />
+
+    <h1>FormularioDinheiro</h1>
     <FormularioDinheiro />
+
+    <h1>Login</h1>
     <Login />
 
-    <BarraProgresso
-      CorA={'red'}
-      CompA={'50%'}
-      CorB={'blue'}
-      CompB={'50%'}
-      FanB={'block'}
-    ></BarraProgresso>
-    <BarraProgresso
-      CorA={'#1968d#FC3467'}
-      CompA={'25%'}
-      CorB={'#17d28f'}
-      CompB={'25%'}
-      FanB={'block'}
-      CorC={'#fc3467'}
-      CompC={'25%'}
-      FanC={'block'}
-      CorD={'#e9eff2'}
-      CompD={'25%'}
-      FanD={'block'}
-    ></BarraProgresso>
-    <BarraProgresso></BarraProgresso>
+    <h1>EmailSenha</h1>
     <EmailSenha />
-    <TituloComIcone/>
+
+    <h1>TituloComIcone</h1>
+    <TituloComIcone />
+
+    <h1>ResumoFinanceiro</h1>
     <ResumoFinanceiro
       rendaTotal={3000}
       dividas={600}
@@ -63,6 +82,6 @@ const Home = () => (
       CorC="#17D28F"
       CorD="#111111"
     />
-  </>
+  </section>
 )
 export default Home

@@ -1,8 +1,16 @@
 * {
-  padding: 8px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   background: #f5f7f8;
+}
+
+h1 {
+  font: bold 24px Arial, sans-serif;
+  padding: 0 0 8px;
+  border-bottom: 1px solid #333;
+  margin: 24px 0;
+  width: 100%;
 }
