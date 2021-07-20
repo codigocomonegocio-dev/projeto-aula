@@ -1,8 +1,4 @@
-.texto1,
-.texto2,
-.texto3,
-.texto4,
-.texto5 {
+.texto {
   font: 12px 'Mulish', sans-serif;
   font-style: normal;
   color: #111111;
@@ -21,16 +17,17 @@
 .resumo {
   background-color: #ffffff;
   width: 380px;
-  padding: 20px 20px 60px 20px;
+  height: 150px;
+  padding: 40px 20px 60px 20px;
   border-radius: 8px;
 }
 
 .total {
-  width: 310px;
+  width: 340px;
   position: relative;
-  margin-bottom: 20px;
+  margin: 0px auto 25px;
 
-  .texto1 {
+  .texto {
     position: absolute;
     left: 0px;
   }
@@ -41,7 +38,7 @@
 }
 
 .resumo-linha {
-  width: 310px;
+  width: 340px;
   position: relative;
   margin-bottom: 10px;
 
@@ -51,21 +48,38 @@
   }
 
   .texto {
-    font: 12px 'Mulish', sans-serif;
-    font-style: normal;
-    color: #111111;
-    font-weight: 400;
     line-height: 18px;
     position: absolute;
     left: 8%;
   }
   .valor {
-    font: 14px 'Montserrat', sans-serif;
-    font-style: normal;
-    color: #111111;
-    font-weight: 700;
-    line-height: 22px;
     position: absolute;
     right: 0px;
+  }
+}
+
+.barra-financeiro {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.conjunto-linhas {
+  margin: 20px 20px;
+  position: relative;
+  .dividas {
+    position: absolute;
+    top: 0px;
+  }
+  .contas {
+    position: absolute;
+    top: 30px;
+  }
+  .futuro {
+    position: absolute;
+    top: 60px;
+  }
+  .sobra {
+    position: absolute;
+    top: 90px;
   }
 }
