@@ -1,8 +1,10 @@
 $cor1: #000000;
 $cor2: #c4342d;
+$cor3: #5e6a6e;
 
 $tamanho2: 16px;
 $tamanho3: 12px;
+$tamanho4: 18px;
 
 @mixin texto($size, $color) {
   font: $size 'Montserrat', sans-serif;
@@ -21,7 +23,7 @@ $tamanho3: 12px;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap');
 
 @import 'reset';
 
@@ -34,3 +36,4 @@ $tamanho3: 12px;
 @import 'components/login';
 @import 'components/N7';
 @import 'components/emailSenha';
+@import 'components/lineThrough';
