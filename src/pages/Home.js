@@ -87,7 +87,7 @@ const Home = () => (
     <h1>TextoMarcado</h1>
     <TextoMarcado text="Minhas Metas" />
     <h1>Avatar</h1>
-    <Avatar />
+    <Avatar text="Brenno Ogeda" />
   </section>
 )
 export default Home
