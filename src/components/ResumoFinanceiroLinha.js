@@ -19,7 +19,7 @@ const ResumoFinanceiroLinha = ({
         >
           <circle cx="7" cy="7" r="7" fill={corPreenchimento} />
         </svg>
-        <h2 className="texto">{textoInfo}</h2>
+        <p className="texto">{textoInfo}</p>
         <DinheiroTexto className="valor">{valorAberto}</DinheiroTexto>
       </div>
     </>
