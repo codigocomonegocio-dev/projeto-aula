@@ -1,0 +1,14 @@
+.textoMarcado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  cursor: pointer;
+
+  span {
+    font: 600 $tamanho4 'Mulish', sans-serif;
+    color: $cor3;
+    line-height: 23px;
+    margin-left: 16px;
+  }
+}

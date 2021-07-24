@@ -10,6 +10,8 @@ import Titulo from 'components/Titulo'
 import EmailSenha from 'components/EmailSenha'
 import TituloComIcone from 'components/TituloComIcone'
 import ResumoFinanceiro from 'components/ResumoFinanceiro'
+import TextoMarcado from 'components/TextoMarcado'
+import Avatar from 'components/Avatar'
 import CardEvolucao from 'components/CardEvolucao'
 
 const Home = () => (
@@ -83,6 +85,10 @@ const Home = () => (
       CorC="#17D28F"
       CorD="#111111"
     />
+    <h1>TextoMarcado</h1>
+    <TextoMarcado text="Minhas Metas" />
+    <h1>Avatar</h1>
+    <Avatar text="Brenno Ogeda" />
     <h1>CardEvolucao</h1>
     <CardEvolucao
       valorObjetivo={15000}

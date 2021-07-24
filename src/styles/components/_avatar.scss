@@ -1,0 +1,23 @@
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+
+  .imgAvatar {
+    /* Class adicionada para transformar img em circulo */
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+  }
+
+  span {
+    font: 500 $tamanho2 'Poppins', sans-serif;
+    color: $cor4;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+}
