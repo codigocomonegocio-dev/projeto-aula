@@ -21,7 +21,7 @@ const CardSeletor = ({ text }) => {
     <>
       <button className="card-seletor" onClick={click}>
         <img className="casinha" src={image} alt="vetor" />
-        <h1>{text}</h1>
+        <p className="nome-card-seletor">{text}</p>
       </button>
     </>
   )

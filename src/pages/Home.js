@@ -12,6 +12,7 @@ import TituloComIcone from 'components/TituloComIcone'
 import ResumoFinanceiro from 'components/ResumoFinanceiro'
 import TextoMarcado from 'components/TextoMarcado'
 import Avatar from 'components/Avatar'
+import CardEvolucao from 'components/CardEvolucao'
 
 const Home = () => (
   <section className="home">
@@ -75,10 +76,10 @@ const Home = () => (
 
     <h1>ResumoFinanceiro</h1>
     <ResumoFinanceiro
-      rendaTotal={3000}
-      dividas={600}
-      contas={1000}
-      futuro={800}
+      rendaTotal={5000}
+      dividas={1000}
+      contas={2000}
+      futuro={1500}
       CorA="#FC3467"
       CorB="#1968DF"
       CorC="#17D28F"
@@ -88,6 +89,13 @@ const Home = () => (
     <TextoMarcado text="Minhas Metas" />
     <h1>Avatar</h1>
     <Avatar text="Brenno Ogeda" />
+    <h1>CardEvolucao</h1>
+    <CardEvolucao
+      valorObjetivo={15000}
+      valorAtual={7000}
+      text1="Um valor inicial para sua reserva de emergência,"
+      text2="é manter pelo menos 3 meses de gastos guardados."
+    ></CardEvolucao>
   </section>
 )
 export default Home

@@ -17,51 +17,63 @@ const ResumoFinanceiro = ({
     <>
       <div className="resumo">
         <div className="total">
-          <h1 className="texto1">Renda total</h1>
+          <p className="texto">Renda total</p>
           <DinheiroTexto className="valor">{rendaTotal}</DinheiroTexto>
         </div>
 
-        <BarraProgresso
-          CorA={CorA}
-          CompA={String((dividas / rendaTotal) * 100) + '%'}
-          CorB={CorB}
-          CompB={String((contas / rendaTotal) * 100) + '%'}
-          FanB={'block'}
-          CorC={CorC}
-          CompC={String((futuro / rendaTotal) * 100) + '%'}
-          FanC={'block'}
-          CorD={CorD}
-          CompD={
-            String(
-              ((rendaTotal - dividas - contas - futuro) / rendaTotal) * 100
-            ) + '%'
-          }
-          FanD={'block'}
-        ></BarraProgresso>
+        <div className="barra-financeiro">
+          <BarraProgresso
+            valores={[
+              {
+                cor: '#000000',
+                porcentagem: 100,
+              },
+              {
+                cor: '#17D28F',
+                porcentagem: ((futuro + contas + dividas) / rendaTotal) * 100,
+              },
+              {
+                cor: '#1968DF',
+                porcentagem: ((contas + dividas) / rendaTotal) * 100,
+              },
+              {
+                cor: '#FC3467',
+                porcentagem: (dividas / rendaTotal) * 100,
+              },
+            ]}
+          ></BarraProgresso>
+        </div>
 
-        <ResumoFinanceiroLinha
-          corPreenchimento={CorA}
-          textoInfo="Pagando dívidas"
-          valorAberto={dividas}
-        ></ResumoFinanceiroLinha>
-
-        <ResumoFinanceiroLinha
-          corPreenchimento={CorB}
-          textoInfo="Pagando contas"
-          valorAberto={contas}
-        ></ResumoFinanceiroLinha>
-
-        <ResumoFinanceiroLinha
-          corPreenchimento={CorC}
-          textoInfo="Investindo no futuro"
-          valorAberto={futuro}
-        ></ResumoFinanceiroLinha>
-
-        <ResumoFinanceiroLinha
-          corPreenchimento={CorD}
-          textoInfo="Sobrou, gaste como quiser!"
-          valorAberto={rendaTotal - dividas - contas - futuro}
-        ></ResumoFinanceiroLinha>
+        <div className="conjunto-linhas">
+          <div className="dividas">
+            <ResumoFinanceiroLinha
+              corPreenchimento={CorA}
+              textoInfo="Pagando dívidas"
+              valorAberto={dividas}
+            ></ResumoFinanceiroLinha>
+          </div>
+          <div className="contas">
+            <ResumoFinanceiroLinha
+              corPreenchimento={CorB}
+              textoInfo="Pagando contas"
+              valorAberto={contas}
+            ></ResumoFinanceiroLinha>
+          </div>
+          <div className="futuro">
+            <ResumoFinanceiroLinha
+              corPreenchimento={CorC}
+              textoInfo="Investindo no futuro"
+              valorAberto={futuro}
+            ></ResumoFinanceiroLinha>
+          </div>
+          <div className="sobra">
+            <ResumoFinanceiroLinha
+              corPreenchimento={CorD}
+              textoInfo="Sobrou, gaste como quiser!"
+              valorAberto={rendaTotal - dividas - contas - futuro}
+            ></ResumoFinanceiroLinha>
+          </div>
+        </div>
       </div>
     </>
   )

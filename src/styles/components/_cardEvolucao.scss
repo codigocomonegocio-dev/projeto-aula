@@ -1,0 +1,39 @@
+.card-evolucao {
+  width: 515px;
+  background-color: #ffffff;
+  padding: 20px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px #e1e3e5;
+}
+
+.titulo-icone {
+  width: 467px;
+  margin: 0px auto 50px;
+}
+
+.valores-reserva {
+  font: 14px 'Montserrat', sans-serif;
+  font-style: normal;
+  color: #111111;
+  font-weight: 700;
+  line-height: 22px;
+  width: 467px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.barra-evolucao {
+  width: 467px;
+  margin: 0px auto;
+}
+
+.mensagem {
+  font: 12px 'Mulish', sans-serif;
+  font-style: normal;
+  color: #111111;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  margin: 25px 0px 10px;
+}
