@@ -1,38 +1,30 @@
 import React, { useState } from 'react'
 
-import map from '../assets/map.svg'
-import check from '../assets/check.png'
+import iconeMapa from '../assets/map.svg'
+import iconeChecado from '../assets/check.png'
 
 const TextoMarcado = ({ text }) => {
-  const [image, setImage] = useState(map)
+  const [imagem, setImagem] = useState(iconeMapa)
+  const [classeRiscado, setClasseRiscado] = useState('')
+  const [estaRiscado, setEstaRiscado] = useState(true)
 
-  const [verified, setVerified] = useState(false)
-
-  const [TextoMarcado, setTextoMarcado] = useState(false)
-
-  const click = () => {
-    setVerified(!verified)
-    if (verified === true) {
-      setImage(check)
+  const AlternaRiscado = () => {
+    if (estaRiscado) {
+      setClasseRiscado('riscado')
+      setImagem(iconeChecado)
+    } else {
+      setClasseRiscado('')
+      setImagem(iconeMapa)
     }
-    if (TextoMarcado === true) {
-      setTextoMarcado(
-        <span
-          style={{
-            textDecoration: 'line-through',
-          }}
-        ></span>
-      )
-    } else if (verified === false) {
-      setImage(map)
-    }
+
+    setEstaRiscado(!estaRiscado)
   }
 
   return (
     <>
-      <div className="textoMarcado" onClick={click}>
-        <img className="map" src={image} alt="Ícone de Mapa" />
-        <span>{text}</span>
+      <div className="textoMarcado" onClick={AlternaRiscado}>
+        <img src={imagem} alt="Ícone de Mapa" />
+        <span className={classeRiscado}>{text}</span>
       </div>
     </>
   )

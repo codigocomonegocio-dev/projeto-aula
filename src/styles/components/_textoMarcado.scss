@@ -1,14 +1,20 @@
 .textoMarcado {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
   cursor: pointer;
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
 
   span {
     font: 600 $tamanho4 'Mulish', sans-serif;
     color: $cor3;
-    line-height: 23px;
+    line-height: 40px;
     margin-left: 16px;
+
+    &.riscado {
+      text-decoration: line-through;
+    }
   }
 }
