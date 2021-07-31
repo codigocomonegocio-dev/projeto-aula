@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 $cor1: #000000;
@@ -35,5 +35,8 @@ $tamanho4: 18px;
 @import 'components/tituloComIcone';
 @import 'components/resumoFinanceiro';
 @import 'components/textoMarcado';
+@import 'components/titulo';
+@import 'components/dicas';
 @import 'components/avatar';
+@import 'components/card';
 @import 'components/cardEvolucao';

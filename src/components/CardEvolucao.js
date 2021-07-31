@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import DinheiroTexto from 'components/DinheiroTexto'
 import BarraProgresso from 'components/BarraProgresso'
 import TituloComIcone from 'components/TituloComIcone'
+import Card from 'components/Card'
 
 const CardSeletor = ({ valorObjetivo, valorAtual, text1, text2 }) => {
   return (
-    <>
-      <div className="card-evolucao">
+    <Card>
+      <div>
         <div className="titulo-icone">
           <TituloComIcone></TituloComIcone>
         </div>
@@ -34,7 +35,7 @@ const CardSeletor = ({ valorObjetivo, valorAtual, text1, text2 }) => {
           <p>{text2}</p>
         </div>
       </div>
-    </>
+    </Card>
   )
 }
 
