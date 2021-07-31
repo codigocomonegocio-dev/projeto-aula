@@ -1,0 +1,19 @@
+.titulo {
+  text-align: center;
+
+  h2 {
+    font: 600 26px 'Mulish', sans-serif;
+    color: $cor4;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  > span {
+    display: block;
+    margin-top: 4px;
+    font: 600 18px 'Mulish', sans-serif;
+    color: $cor3;
+  }
+}

@@ -13,6 +13,11 @@ import ResumoFinanceiro from 'components/ResumoFinanceiro'
 import TextoMarcado from 'components/TextoMarcado'
 import Avatar from 'components/Avatar'
 import CardEvolucao from 'components/CardEvolucao'
+import Dicas from 'components/Dicas'
+import Card from 'components/Card'
+
+import IconeOuro from '../assets/icone-ouro.png'
+import IconeDinheiro from '../assets/icone-dinheiro.png'
 
 const Home = () => (
   <section className="home">
@@ -44,8 +49,28 @@ const Home = () => (
       destaque="gastos fixos"
       texto2="mensais"
       subtitulo="Não se preocupe, você poderá fazer isso depois"
-      corDestaque="#FF0000"
+      corDestaque="#673AB7"
     />
+
+    <h1>Dicas</h1>
+    <Dicas
+      icone={IconeOuro}
+      iconeGrande={false}
+      texto1="Você poderia investir "
+      destaque="aproximadamente"
+      texto2=" R$ 893,00 (19%) da sua renda sem prejudicar seu padrão de vida."
+    />
+
+    <h1>Dicas com Card</h1>
+    <Card>
+      <Dicas
+        icone={IconeDinheiro}
+        iconeGrande={true}
+        texto1="Você poderia investir "
+        destaque="aproximadamente"
+        texto2=" R$ 893,00 (19%) da sua renda sem prejudicar seu padrão de vida."
+      />
+    </Card>
 
     <h1>Botões</h1>
     <Botao texto="Entre com Facebook" classe="btnFacebook" />

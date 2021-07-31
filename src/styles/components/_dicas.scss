@@ -1,0 +1,27 @@
+.dicas {
+  width: 260px;
+  text-align: center;
+
+  img {
+    margin-bottom: 8px;
+
+    &.icone-grande {
+      width: 70px;
+      height: 70px;
+    }
+
+    &.icone-normal {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  p {
+    font: 600 14px 'Mulish', sans-serif;
+    color: $cor1;
+
+    span {
+      font-weight: 800;
+    }
+  }
+}
