@@ -1,12 +1,13 @@
 .titulo-com-imagem {
   display: flex;
-}
-.Texto {
-  font-weight: bold;
-  font: 15px 'Poppins', sans-serif;
-}
 
-.Escudo {
-  margin-top: 6px;
-  margin-right: 20px;
+  .texto {
+    font-weight: bold;
+    font: 15px 'Poppins', sans-serif;
+  }
+
+  .icone {
+    margin-top: 6px;
+    margin-right: 20px;
+  }
 }
