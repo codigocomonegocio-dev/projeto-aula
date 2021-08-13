@@ -1,7 +1,7 @@
 import React from 'react'
 import Imagem from '../assets/money.png'
 
-const Titulo1 = () => {
+const TituloComIcone = () => {
   return (
     <>
       <div className="titulo-com-imagem">
@@ -15,4 +15,4 @@ const Titulo1 = () => {
     </>
   )
 }
-export default Titulo1
+export default TituloComIcone

@@ -30,7 +30,7 @@ const Login = () => {
       ></input>
 
       <p>{errorEmail}</p>
-      <h2>Sua Senha</h2>
+      <h2>Sua senha</h2>
       <input className="senha" type="password" placeholder="senha"></input>
     </div>
   )
