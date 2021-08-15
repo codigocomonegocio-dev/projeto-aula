@@ -1,0 +1,40 @@
+.iconeNivel {
+  .circulo {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 4px solid $cor5;
+  }
+  .um {
+    background-color: #fa3131;
+  }
+  .dois {
+    background-color: #fa9d31;
+  }
+
+  .tres {
+    background-color: #face31;
+  }
+
+  .quatro {
+    background-color: #4dc024;
+  }
+
+  .cinco {
+    background-color: #24c0ae;
+  }
+
+  .seis {
+    background-color: #249bc0;
+  }
+
+  .sete {
+    background-color: #4324c0;
+  }
+
+  .numero {
+    font: 700 $tamanho5 'Montserrat', sans-serif;
+    color: $cor5;
+    text-align: center;
+  }
+}

@@ -15,6 +15,7 @@ import Avatar from 'components/Avatar'
 import CardEvolucao from 'components/CardEvolucao'
 import Dicas from 'components/Dicas'
 import Card from 'components/Card'
+import IconeNivel from 'components/IconeNivel'
 
 import IconeOuro from '../assets/icone-ouro.png'
 import IconeDinheiro from '../assets/icone-dinheiro.png'
@@ -121,6 +122,8 @@ const Home = () => (
       text1="Um valor inicial para sua reserva de emergência,"
       text2="é manter pelo menos 3 meses de gastos guardados."
     ></CardEvolucao>
+    <h1>IconeNível</h1>
+    <IconeNivel></IconeNivel>
   </section>
 )
 export default Home
