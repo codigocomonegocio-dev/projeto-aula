@@ -30,9 +30,9 @@
     right: 114px;
     bottom: 168px;
     background: #f6f7f8;
-    border: 2px solid #c4342d;
     box-sizing: border-box;
     border-radius: 4px;
+    border: none;
 
     @include texto(16px, $cor1);
 
@@ -94,5 +94,9 @@
     left: 115px;
     top: 260px;
     display: flex;
+  }
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
 }
