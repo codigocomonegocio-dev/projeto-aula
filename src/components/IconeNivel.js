@@ -1,35 +1,38 @@
 import React from 'react'
 
-const IconeNivel = () => {
+const IconeNivel = ({ numero }) => {
+  const selecionaNumero = (valorRecebido) => {
+    switch (valorRecebido) {
+      case 1:
+        return 'um'
+        break
+      case 2:
+        return 'dois'
+        break
+      case 3:
+        return 'tres'
+        break
+      case 4:
+        return 'quatro'
+        break
+      case 5:
+        return 'cinco'
+        break
+      case 6:
+        return 'seis'
+        break
+      case 7:
+        return 'sete'
+        break
+      default:
+    }
+  }
+
   return (
     <>
       <div className="iconeNivel">
-        <div className="circulo um">
-          <div className="numero">1</div>
-        </div>
-
-        <div className="circulo dois">
-          <div className="numero">2</div>
-        </div>
-
-        <div className="circulo tres">
-          <div className="numero">3</div>
-        </div>
-
-        <div className="circulo quatro">
-          <div className="numero">4</div>
-        </div>
-
-        <div className="circulo cinco">
-          <div className="numero">5</div>
-        </div>
-
-        <div className="circulo seis">
-          <div className="numero">6</div>
-        </div>
-
-        <div className="circulo sete">
-          <div className="numero">7</div>
+        <div className={`circulo ${selecionaNumero(numero)}`}>
+          <div className="textoNumero">{numero}</div>
         </div>
       </div>
     </>

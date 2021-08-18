@@ -4,7 +4,11 @@
     height: 40px;
     width: 40px;
     border: 4px solid $cor5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
+
   .um {
     background-color: #fa3131;
   }
@@ -32,9 +36,15 @@
     background-color: #4324c0;
   }
 
-  .numero {
+  .textoNumero {
     font: 700 $tamanho5 'Montserrat', sans-serif;
     color: $cor5;
     text-align: center;
   }
+}
+
+.relativeCirculo {
+  position: relative;
+  width: 40px;
+  height: 40px;
 }

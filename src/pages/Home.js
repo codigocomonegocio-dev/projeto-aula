@@ -123,7 +123,9 @@ const Home = () => (
       text2="é manter pelo menos 3 meses de gastos guardados."
     ></CardEvolucao>
     <h1>IconeNível</h1>
-    <IconeNivel></IconeNivel>
+    <div className="relativeCirculo">
+      <IconeNivel numero={5}></IconeNivel>
+    </div>
   </section>
 )
 export default Home
