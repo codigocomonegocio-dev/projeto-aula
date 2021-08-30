@@ -65,6 +65,9 @@
     border: 1px solid #cfd4d6;
     box-sizing: border-box;
     border-radius: 4px;
+    &.erro {
+      border: 1px solid #FF0000;
+    }
   }
   .lacuna2 {
     position: absolute;
@@ -76,6 +79,10 @@
     border: 1px solid #cfd4d6;
     box-sizing: border-box;
     border-radius: 4px;
+    
+    &.erro {
+      border: 1px solid #FF0000;
+    }
   }
 
   .button {
