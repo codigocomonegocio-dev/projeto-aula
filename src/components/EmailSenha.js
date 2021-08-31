@@ -6,14 +6,20 @@ const EmailSenha = (props) => {
   const [senhaConfirmar, setSenhaConfirmar] = useState('')
   const [erro, setErro] = useState()
   const [erroClasse, setErroClasse] = useState('')
+  const [erroEmailClasse, setErroEmailClasse] = useState('')
   const [erroMail, setErroMail] = useState()
+
 
   const Clicou = () => {
     if (email == '') {
-      setErroMail('Entre com seu e-mail')
+      setErroEmailClasse('erro')
+
+      setErroMail('Preencha seu e-mail')
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
       setErroMail('e-mail inválido')
+      setErroEmailClasse('erro')
     } else {
+      setErroEmailClasse('')
       setErroMail('e-mail válido')
     }
 
@@ -34,7 +40,7 @@ const EmailSenha = (props) => {
       <div className="emailSenha">
         <h1>Seu e-mail</h1>
         <input
-          className="email"
+          className={ erroEmailClasse + ' email'}
           type="text"
           placeholder="e-mail"
           value={props.email}
