@@ -14,6 +14,7 @@ import Avatar from 'components/Avatar'
 import CardEvolucao from 'components/CardEvolucao'
 import Dicas from 'components/Dicas'
 import Card from 'components/Card'
+import ComponenteMes from 'components/ComponenteMes'
 import IconeNivel from 'components/IconeNivel'
 import TituloComIcone from 'components/TituloComIcone'
 import IconeOuro from '../assets/icone-ouro.png'
@@ -121,6 +122,8 @@ const Home = () => (
       text1="Um valor inicial para sua reserva de emergência,"
       text2="é manter pelo menos 3 meses de gastos guardados."
     ></CardEvolucao>
+    <h1>ComponenteMes</h1>
+    <ComponenteMes mes="Agosto" ano="2021" />
     <h1>IconeNível</h1>
     <div className="relativeCirculo">
       <IconeNivel numero={5}></IconeNivel>
