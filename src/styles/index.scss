@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
@@ -7,10 +7,12 @@ $cor1: #000000;
 $cor2: #c4342d;
 $cor3: #5e6a6e;
 $cor4: #3b4453;
+$cor5: #ffffff;
 
 $tamanho2: 16px;
 $tamanho3: 12px;
 $tamanho4: 18px;
+$tamanho5: 32px;
 
 @mixin texto($size, $color) {
   font: $size 'Montserrat', sans-serif;
@@ -40,3 +42,4 @@ $tamanho4: 18px;
 @import 'components/avatar';
 @import 'components/card';
 @import 'components/cardEvolucao';
+@import 'components/iconeNivel';
