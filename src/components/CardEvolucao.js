@@ -4,12 +4,17 @@ import BarraProgresso from 'components/BarraProgresso'
 import TituloComIcone from 'components/TituloComIcone'
 import Card from 'components/Card'
 
+import IconeEmergencia from '../assets/money.png'
+
 const CardSeletor = ({ valorObjetivo, valorAtual, text1, text2 }) => {
   return (
     <Card>
-      <div>
+      <div className="card-evolucao">
         <div className="titulo-icone">
-          <TituloComIcone></TituloComIcone>
+          <TituloComIcone
+            titulo="Reserva de emergência"
+            icone={IconeEmergencia}
+          />
         </div>
         <div className="valores-reserva">
           <DinheiroTexto>0</DinheiroTexto>

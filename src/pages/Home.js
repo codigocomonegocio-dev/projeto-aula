@@ -13,15 +13,22 @@ import TextoMarcado from 'components/TextoMarcado'
 import Avatar from 'components/Avatar'
 import CardEvolucao from 'components/CardEvolucao'
 import Dicas from 'components/Dicas'
+import CardTabela from 'components/CardTabela'
 import Card from 'components/Card'
 import ComponenteMes from 'components/ComponenteMes'
 import IconeNivel from 'components/IconeNivel'
 import TituloComIcone from 'components/TituloComIcone'
 import IconeOuro from '../assets/icone-ouro.png'
 import IconeDinheiro from '../assets/icone-dinheiro.png'
+import IconeEmergencia from '../assets/money.png'
+
+let valores = [1, 2, 3]
 
 const Home = () => (
   <section className="home">
+    <h1>Card Tabela</h1>
+    <CardTabela />
+
     <h1>BarraProgresso</h1>
     <BarraProgresso
       valores={[
@@ -98,7 +105,7 @@ const Home = () => (
     <EmailSenha />
 
     <h1>TituloComIcone</h1>
-    <TituloComIcone />
+    <TituloComIcone titulo="Reserva" icone={IconeEmergencia} />
 
     <h1>ResumoFinanceiro</h1>
     <ResumoFinanceiro
