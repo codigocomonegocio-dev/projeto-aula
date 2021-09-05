@@ -1,25 +1,37 @@
 import React, { useState } from 'react'
 
 const EmailSenha = (props) => {
-  const [email, setEmail] = useState()
-  const [Senha, setSenha] = useState()
-  const [Confirmar, setConfirmar] = useState()
-  const [Erro, setErro] = useState()
-  const [Erromail, setErromail] = useState()
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [senhaConfirmar, setSenhaConfirmar] = useState('')
+  const [erro, setErro] = useState()
+  const [erroClasse, setErroClasse] = useState('')
+  const [erroEmailClasse, setErroEmailClasse] = useState('')
+  const [erroMail, setErroMail] = useState()
+
 
   const Clicou = () => {
-    if (!email) {
-      setErromail('Entre com seu e-mail')
+    if (email == '') {
+      setErroEmailClasse('erro')
+
+      setErroMail('Preencha seu e-mail')
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
-      setErromail('e-mail inválido')
+      setErroMail('e-mail inválido')
+      setErroEmailClasse('erro')
     } else {
-      setErromail('e-mail válido')
+      setErroEmailClasse('')
+      setErroMail('e-mail válido')
     }
 
-    if (Senha === Confirmar) {
-      setErro('senha está correta')
+    if (senha == '') {
+      setErro('Preencha sua senha')
+      setErroClasse('erro')
+    } else if (senha == senhaConfirmar) {
+      setErro('Senha correta!')
+      setErroClasse('')
     } else {
       setErro('A senha não Confere')
+      setErroClasse('erro')
     }
   }
 
@@ -28,29 +40,29 @@ const EmailSenha = (props) => {
       <div className="emailSenha">
         <h1>Seu e-mail</h1>
         <input
-          className="email"
+          className={ erroEmailClasse + ' email'}
           type="text"
           placeholder="e-mail"
           value={props.email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
-        <label>{Erromail}</label>
+        <label>{erroMail}</label>
         <div className="coluna">
           <h2>Sua senha</h2>
           <input
-            className="lacuna1"
+            className={erroClasse + ' lacuna1'}
             type="password"
             placeholder="Senha"
             onChange={(e) => setSenha(e.target.value)}
           ></input>
-          <label>{Erro}</label>
           <h3>Repetir senha</h3>
           <input
-            className="lacuna2"
+            className={erroClasse + ' lacuna2'}
             type="password"
             placeholder=" Repetir Senha"
-            onChange={(e) => setConfirmar(e.target.value)}
+            onChange={(e) => setSenhaConfirmar(e.target.value)}
           ></input>
+          <span>{erro}</span>
         </div>
 
         <button className="button button2" onClick={Clicou}>
